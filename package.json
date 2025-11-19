@@ -1,0 +1,24 @@
+{
+  "name": "localserv",
+  "version": "1.0.0",
+  "description": "A lightweight, production-ready static environment manager for Windows.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . Localserv --platform=win32 --arch=x64 --overwrite --prune"
+  },
+  "keywords": [
+    "electron",
+    "static-server",
+    "express",
+    "developer-tools",
+    "localhost"
+  ],
+  "author": "Galore",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^28.0.0",
+    "express": "^4.18.2",
+    "portfinder": "^1.0.32"
+  }
+}
