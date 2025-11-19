@@ -61,7 +61,7 @@
  
  ### Download Pre-built Executable
  
- 1. Go to the [Releases](https://github.com/yourusername/localserv/releases) page
+ 1. Go to the [Releases](https://github.com/nicholasxdavis/localserv/releases) page
  2. Download the latest `Localserv-win32-x64.zip`
  3. Extract the ZIP file
  4. Run `Localserv.exe`
@@ -79,7 +79,7 @@
  
  1. Clone this repository or download the files:
     ```bash
-    git clone https://github.com/yourusername/localserv.git
+    git clone https://github.com/nicholasxdavis/localserv.git
     cd localserv
     ```
  
@@ -331,12 +331,12 @@
  
  ## Support
  
- If this tool saved you some time, feel free to [buy me a coffee](https://buymeacoffee.com/yourusername) ☕
+ If this tool saved you some time, feel free to [buy me a coffee](https://buymeacoffee.com/nicholasxdavis) ☕
  
  ### Get Help
  
- - 🐛 **Bug Reports**: [Open an issue](https://github.com/yourusername/localserv/issues)
- - 💡 **Feature Requests**: [Start a discussion](https://github.com/yourusername/localserv/discussions)
+ - 🐛 **Bug Reports**: [Open an issue](https://github.com/nicholasxdavis/localserv/issues)
+ - 💡 **Feature Requests**: [Start a discussion](https://github.com/nicholasxdavis/localserv/discussions)
  - 📧 **Email**: support@localserv.dev
  
  ---
@@ -378,7 +378,7 @@
  
  ## Star History
  
- [![Star History Chart](https://api.star-history.com/svg?repos=yourusername/localserv&type=Date)](https://star-history.com/#yourusername/localserv&Date)
+ [![Star History Chart](https://api.star-history.com/svg?repos=nicholasxdavis/localserv&type=Date)](https://star-history.com/#nicholasxdavis/localserv&Date)
  
  ---
  
@@ -396,10 +396,10 @@
  
  ### Quick Links
  
- - [Download Latest Release](https://github.com/yourusername/localserv/releases/latest)
- - [Report a Bug](https://github.com/yourusername/localserv/issues/new?template=bug_report.md)
- - [Request a Feature](https://github.com/yourusername/localserv/issues/new?template=feature_request.md)
- - [View Documentation](https://github.com/yourusername/localserv/wiki)
+ - [Download Latest Release](https://github.com/nicholasxdavis/localserv/releases/latest)
+ - [Report a Bug](https://github.com/nicholasxdavis/localserv/issues/new?template=bug_report.md)
+ - [Request a Feature](https://github.com/nicholasxdavis/localserv/issues/new?template=feature_request.md)
+ - [View Documentation](https://github.com/nicholasxdavis/localserv/wiki)
  
  ---
  
