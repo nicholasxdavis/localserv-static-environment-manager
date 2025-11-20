@@ -11,7 +11,7 @@
  
  Localserv is a desktop utility for Windows that lets you instantly serve static websites from any folder on your computer.
  
- I built this because I was tired of running `python -m http.server` or setting up a full Node environment just to preview a simple HTML file. This tool wraps a real Express server in a clean Electron GUI so you can test your projects in a production-like environment without the command line.
+I built this because I was tired of running python -m http.server or setting up a full Node environment just to preview a simple HTML file. Opening HTML locally still triggers things like CORS restrictions. This tool embeds a real Express server inside a clean Electron interface, giving you a production-style environment for development and debugging without touching the terminal.
  
  ---
  
