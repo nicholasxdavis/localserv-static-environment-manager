@@ -1,3 +1,5 @@
+![Localserv Header](https://raw.githubusercontent.com/nicholasxdavis/BN-db1/cbc9f4ae9786c0f4af6147ea882b93c5ac5d76aa/img/Screenshot%202025-11-19%20185650.png)
+
 # Localserv
 
 ![Localserv Logo](https://img.shields.io/badge/Localserv-Static%20Server-blue) ![Windows](https://img.shields.io/badge/platform-Windows-lightgrey) ![License](https://img.shields.io/badge/license-MIT-green)
