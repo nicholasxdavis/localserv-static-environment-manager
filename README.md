@@ -111,9 +111,8 @@ Uses Tailwind CSS for:
 
 ---
 
-## Support
-
-If this tool saved you some time, feel free to buy me a coffee ☕
+<h3 align="left">Support:</h3>
+<p><a href="https://www.buymeacoffee.com/galore"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="galore" /></a></p><br><br>
 
 ---
 
