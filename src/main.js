@@ -1,3 +1,5 @@
+import './style.css';
+
 // --- Application State ---
 const AppState = {
     isConsoleCollapsed: true,
@@ -48,7 +50,7 @@ if (!window.api) {
 const App = {
     init() {
         this.bindEvents();
-        this.log('Localserv v1.0.0 ready.');
+        this.log('Localserv ready.');
     },
 
     bindEvents() {

@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./src/**/*.{html,js}",
   ],
@@ -11,7 +11,7 @@ export default {
         mono: ['Geist Mono', 'monospace'],
       },
       colors: {
-        background: '#09090b',
+        background: '#000000',
         surface: '#18181b',
         border: '#27272a',
       },

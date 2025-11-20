@@ -36,7 +36,7 @@ function createWindow() {
     minHeight: 480,
     frame: false,            // Custom title bar implementation
     titleBarStyle: 'hidden', // Mac compatibility
-    backgroundColor: '#09090b',
+    backgroundColor: '#000000',
     title: "Localserv",
     show: false,             // Prevent white flash during render
     webPreferences: {
@@ -53,7 +53,22 @@ function createWindow() {
   if (isDev) {
     mainWindow.loadURL('http://localhost:5173');
   } else {
-    mainWindow.loadFile(path.join(__dirname, '../dist/index.html'));
+    // In production, load from dist folder
+    // When packaged with asarUnpack, dist is outside the asar archive
+    let distPath;
+    if (app.isPackaged) {
+      // When packaged, dist is unpacked to app.asar.unpacked/dist
+      distPath = path.join(process.resourcesPath, 'app.asar.unpacked', 'dist', 'index.html');
+    } else {
+      // In development build (not packaged), use relative path
+      distPath = path.join(__dirname, '../dist/index.html');
+    }
+    mainWindow.loadFile(distPath).catch(err => {
+      console.error('Failed to load index.html:', err);
+      // Fallback: try standard path
+      const fallbackPath = path.join(__dirname, '../dist/index.html');
+      mainWindow.loadFile(fallbackPath).catch(console.error);
+    });
   }
 
   // Graceful startup
