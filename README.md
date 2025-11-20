@@ -2,15 +2,15 @@
 
 # Localserv
 
-![Localserv Logo](https://img.shields.io/badge/Localserv-Static%20Server-blue) ![Windows](https://img.shields.io/badge/platform-Windows-lightgrey) ![License](https://img.shields.io/badge/license-MIT-green)
+![Localserv Logo](https://img.shields.io/badge/Localserv-Local%20Server-blue) ![Windows](https://img.shields.io/badge/platform-Windows-lightgrey) ![License](https://img.shields.io/badge/license-MIT-green)
 
-**A desktop utility for Windows that lets you instantly serve static websites from any folder on your computer.**
+**A desktop utility for Windows that lets you instantly serve websites or projects from any folder on your computer.**
 
 ---
 
 ## Overview
 
-Localserv is a desktop utility for Windows that lets you instantly serve static websites from any folder on your computer.
+Localserv is a desktop utility for Windows that lets you instantly serve websites or modern frontend builds (like Vue, React, or Vite) from any folder on your computer.
 
 I built this because I was tired of running python -m http.server or setting up a full Node environment just to preview a simple HTML file. Opening HTML locally still triggers things like CORS restrictions. This tool embeds a real Express server inside a clean Electron interface, giving you a production-style environment for development and debugging without touching the terminal.
 
@@ -140,7 +140,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-
 ---
 
 ## Star History
@@ -149,4 +148,4 @@ SOFTWARE.
 
 ---
 
-**Made for developers who just want to preview their HTML files without CORS issues.**
+**Made for developers who just want to preview their projects without CORS issues.**
