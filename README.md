@@ -18,12 +18,12 @@ I built this because I was tired of running python -m http.server or setting up 
 
 ## Installation
 
-### Download Pre-built Executable
+### Download & Install (Windows)
 
-1. Go to the [Releases](https://github.com/nicholasxdavis/localserv/releases) page
-2. Download the latest `Localserv-win32-x64.zip`
-3. Extract the ZIP file
-4. Run `Localserv.exe`
+1. Visit the **Releases** page.
+2. Download the latest `setup.exe`.
+3. Run the installer — it will launch the Electron installer automatically.
+4. Once installation finishes, Localserv will open and you're ready to go.
 
 ### Build from Source
 
