@@ -1,0 +1,40 @@
+@import url('https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-sans/style.css');
+@import url('https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    user-select: none;
+  }
+  
+  .drag-region {
+    -webkit-app-region: drag;
+  }
+  
+  .no-drag {
+    -webkit-app-region: no-drag;
+  }
+}
+
+@layer utilities {
+  /* Scrollbar Polish */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #27272a;
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3f3f46;
+  }
+}
+

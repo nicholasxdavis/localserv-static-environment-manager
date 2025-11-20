@@ -2,10 +2,15 @@
   "name": "localserv",
   "version": "1.0.0",
   "description": "A lightweight, production-ready static environment manager for Windows.",
-  "main": "main.js",
+  "main": "dist-electron/main.js",
   "scripts": {
-    "start": "electron .",
-    "build": "electron-packager . Localserv --platform=win32 --arch=x64 --overwrite --prune"
+    "dev": "vite",
+    "build": "vite build",
+    "build:all": "vite build && electron-builder",
+    "preview": "vite preview",
+    "electron:dev": "vite",
+    "electron:start": "electron .",
+    "postinstall": "electron-builder install-app-deps"
   },
   "keywords": [
     "electron",
@@ -14,11 +19,79 @@
     "developer-tools",
     "localhost"
   ],
-  "author": "Galore",
+  "author": "Blacnova Development",
   "license": "MIT",
   "dependencies": {
     "electron": "^28.0.0",
     "express": "^4.18.2",
     "portfinder": "^1.0.32"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "vite-plugin-electron": "^0.28.0",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "electron-builder": "^24.9.1",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.32",
+    "autoprefixer": "^10.4.16"
+  },
+  "build": {
+    "appId": "com.blacnova.localserv",
+    "productName": "Localserv",
+    "copyright": "Copyright © 2024 Blacnova Development",
+    "icon": "build/icon.png",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "build/icon.png",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/*.d.ts",
+      "!**/node_modules/.bin",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}",
+      "!.editorconfig",
+      "!**/._*",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}",
+      "!**/{__pycache__,thumbs.db,.flowconfig,.idea,.vs,.nyc_output}",
+      "!**/{appveyor.yml,.travis.yml,circle.yml}",
+      "!**/{npm-debug.log,yarn.lock,.yarn-integrity,.yarn-metadata.json}"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "build/icon.png",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "mac": {
+      "icon": "build/icon.png",
+      "category": "public.app-category.developer-tools",
+      "target": "dmg"
+    },
+    "linux": {
+      "icon": "build/icon.png",
+      "target": "AppImage",
+      "category": "Development"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "installerIcon": "build/icon.png",
+      "uninstallerIcon": "build/icon.png",
+      "installerHeaderIcon": "build/icon.png",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Localserv"
+    },
+    "compression": "maximum",
+    "removePackageScripts": true
   }
 }
